@@ -6,11 +6,6 @@ from rest_framework import serializers
 from people.models import People
 
 
-# class DynamicDepthSerializer(serializers.ModelSerializer):
-#     def __init__(self, *args, **kwargs):
-#         super().__init__(*args, **kwargs)
-#         depth = self.context.get('depth', 0)
-#
 class PeopleSerializer(serializers.ModelSerializer):
     class Meta:
         model = People
